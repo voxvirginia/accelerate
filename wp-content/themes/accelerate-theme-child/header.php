@@ -38,7 +38,7 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="page-header">
 		<div class="header-main">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
+			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
 			</a>
 
 			<nav class="top-nav">

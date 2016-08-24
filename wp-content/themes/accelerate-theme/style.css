@@ -462,7 +462,7 @@ a, a:link, a:hover {
 }
 
 .accent {
-	background:#333333;	
+	background:#333333;
 }
 
 body {
@@ -494,7 +494,7 @@ h1 {
 }
 
 #masthead a {
-	color:white;
+    color:white;
 }
 
 #masthead h1 {
@@ -504,12 +504,8 @@ h1 {
     text-transform: uppercase;
 }
 
-#masthead nav {
-    float: right;
-}
-
 #masthead nav ul {
-	list-style-type:none;
+    list-style-type:none;
 }
 
 a:hover {
@@ -551,7 +547,6 @@ aside.sidebar {
 
 /* header */
 .page-header {
-	border-bottom: 1px solid #bfbfbf;
 	padding-bottom: 37px;
 	padding-top: 40px;
 }
@@ -572,7 +567,6 @@ aside.sidebar {
 }
 .top-nav {
 	float: right;
-	padding-top: 22px;
 }
 .top-nav-link {
 	color: inherit;
@@ -689,7 +683,7 @@ aside.sidebar {
 	text-decoration: none;
 }
 .post-entry .read-more span {
-	color: #45ac9d; 
+	color: #45ac9d;
 }
 .post-entry .read-more:hover {
 	border-bottom: 1px solid #45ac9d;
@@ -944,7 +938,7 @@ section .navigation {
 
 .homepage-hero h1 {
 	color:white;
-	font-weight:bold;	
+	font-weight:bold;
 }
 
 .homepage-hero h3 {

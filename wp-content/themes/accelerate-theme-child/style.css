@@ -1,0 +1,89 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Virginia Robinson
+ Author URI:   http://virginiarobinson.com
+ Template:     accelerate-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+@import url("../accelerate-theme/style.css");
+
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+.site-title {
+    color: #45ac9d;
+    font: bold  25px 'Montserrat', 'OpenSans', Arial, sans-serif;
+    letter-spacing: -0.034em;
+    text-transform: uppercase;
+}
+
+
+.top-nav ul li{
+    display: inline;
+}
+
+.top-nav a {
+    font-size: 14px;
+    line-height: normal;
+    margin-left: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.top-nav a:hover {
+    border-bottom: 1px solid;
+}
+
+.blog-post {
+    width: 50%;
+}
+
+.blog-post h4 {
+    color: #a6a6a6;
+    font: 'Montserrat' ;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+
+.blog-post h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0 35px 0;
+}
+
+.blog-post .summary {
+    font-family: 'Open Sans';
+    font-size:  17px;
+    font-weight: normal;
+}
+
+
+.blog-post .read-more-link {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #45ac9d;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog-post .read-more-link span {
+    font-size: 12px;
+}
+
+
