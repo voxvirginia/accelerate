@@ -10,6 +10,7 @@
  Text Domain:  accelerate-theme-child
 */
 
+
 @import url("../accelerate-theme/style.css");
 
 .home-page {
@@ -85,5 +86,51 @@
 .blog-post .read-more-link span {
     font-size: 12px;
 }
+
+
+/* case studies */
+.case-study-sidebar {
+    float: left;
+    width: 310px;
+    margin: 50px 50px 0 0;
+}
+
+.case-study-sidebar h2{
+    font-weight: 400;
+}
+
+.case-study-sidebar h5{
+    font-weight: 300;
+    color: #a6a6a6;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+.case-study-sidebar h6{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0 30px;
+}
+
+.case-study-sidebar a{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.case-study-sidebar p{
+    font-size: 16px;
+    margin: 0 0 25px 0;
+}
+
+.case-study-images {
+    float: left;
+    width: 600px;
+    margin: 45px 0 0 0;
+}
+
+.case-study-images img {
+    margin: 0 0 80px 0;
+}
+
 
 
