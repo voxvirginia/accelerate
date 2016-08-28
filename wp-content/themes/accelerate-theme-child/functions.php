@@ -45,3 +45,9 @@ function create_custom_post_types() {
 //initialize custom post type creation
 add_action( 'init', 'create_custom_post_types' );
 
+// changes excerpt symbol
+function custom_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
+
