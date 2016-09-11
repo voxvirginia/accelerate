@@ -18,11 +18,36 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
+				<a class="button" href="<?php echo home_url(); ?>/case-studies">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
+
+<section class="featured-work">
+    <div class="site-content">
+        <h3>Featured Work</h3>
+        <ul class="featured-work-items">
+            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+                <?php while ( have_posts() ) : the_post();
+                     $image_1 = get_field('image_1');
+                     $size = "medium";
+                ?>
+                    <li>
+                        <figure>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if($image_1); {
+                                    echo wp_get_attachment_image( $image_1, $size );
+                                } ?>
+                            </a>
+                        </figure>
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                    </li>
+                <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
+        </ul>
+    </div>
+</section>
 
 <section class="recent-posts">
     <div class="site-content">

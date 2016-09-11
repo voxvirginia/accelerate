@@ -45,3 +45,20 @@ function create_custom_post_types() {
 //initialize custom post type creation
 add_action( 'init', 'create_custom_post_types' );
 
+// changes excerpt symbol
+function custom_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
+
+// Remove 'Accelerate' in the description - call in footer.php ONLY
+function green_accelerate_footer(){
+
+    add_filter( 'option_blogdescription', 'accelerate_change_description_footer', 10, 2 );
+    function accelerate_change_description_footer( $description ) {
+            $description = str_replace('Accelerate', '', $description);
+            return $description;
+    }
+
+};
+
